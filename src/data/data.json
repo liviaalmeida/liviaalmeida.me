@@ -1,0 +1,86 @@
+{
+	"experience": [
+		{
+			"title": "Take",
+			"duration": "jun 2019 - presente",
+			"intro": "Full Stack Developer:",
+			"description": "atuação em front-end utilizando os frameworks AngularJS e Vue.JS, back-end com .NET core e soluções de inteligência artificial com Python."
+		},
+		{
+			"title": "Take",
+			"duration": "ago 2018 - mai 2019",
+			"intro": "AI Team Internship:",
+			"description": "atuação em front-end e back-end, soluções de inteligência artificial com Python e análises de modelos de NLP baseados em intenções e entidades."
+		},
+		{
+			"title": "Take",
+			"duration": "jan 2018 - jul 2019",
+			"intro": "Development Internship:",
+			"description": "atuação no front-end da plataforma BLiP.ai utilizando os frameworks AngularJS e Vue.JS."
+		}
+	],
+	"presentations": [
+		{
+			"title": "The Developer's Conference",
+			"duration": "14 jun 2019",
+			"intro": "Word Embedding e Aplicação",
+			"description": "Como desenvolver uma aplicação para um problema recorrente de NLP utilizando o Word Embedding? Exploração da tarefa de correção ortográfica."
+		},
+		{
+			"title": "Developer Circle",
+			"duration": "19 fev 2019",
+			"intro": "Como Aprender Usando Texto?",
+			"description": "O uso de palavras em modelos matemáticos depende da sua transformação em representações exatas. Um algoritmo que pode fazer isso é o Word Embedding."
+		}
+	],
+	"skills": [
+		{
+			"name": "C/C++",
+			"progress": 0.8
+		},
+		{
+			"name": "C#",
+			"progress": 0.3
+		},
+		{
+			"name": "CSS",
+			"progress": 0.9
+		},
+		{
+			"name": "HTML",
+			"progress": 0.8
+		},
+		{
+			"name": "JavaScript",
+			"progress": 0.9
+		},
+		{
+			"name": "Python",
+			"progress": 0.85
+		},
+		{
+			"name": "SQL",
+			"progress": 0.7
+		}
+	],
+	"education": [
+		{
+			"title": "UFMG",
+			"duration": "conclusão prevista 12/2020",
+			"intro": "Bacharelado",
+			"description": "Ciência da Computação"
+		}
+	],
+	"languages": [
+		{
+			"title": "Inglês",
+			"intro": "Fluência:",
+			"description": "leitura fluente, escrita fluente, fala fluente<br>IELTS 8.0 - 25/10/2014"
+		},
+		{
+			"title": "Francês",
+			"intro": "Fluência:",
+			"description": "leitura média, escrita básica, fala básica<br>Nível A1.3"
+		}
+	]
+}

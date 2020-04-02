@@ -10,4 +10,23 @@ declare global {
       [elem: string]: any;
     }
   }
+
+  type TimeEvent = {
+    title: string,
+    duration?: string,
+    intro?: string,
+    description: string,
+  }
+
+  type Skill = {
+    name: string,
+    progress: number,
+  }
+
+  type Contact = {
+    image: string,
+    text: string,
+    href: string,
+  }
+
 }
