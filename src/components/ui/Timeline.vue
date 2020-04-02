@@ -1,24 +1,43 @@
 <template>
-	<ol class="timeline">
-		<li v-for="(timeEvent, index) in timeEvents" :key="index">
-			<h5>{{timeEvent.title}}</h5>
-			<h6 v-if="timeEvent.duration">{{timeEvent.duration}}</h6>
-			<p>
-				<span v-if="timeEvent.intro" class="intro">{{timeEvent.intro}}</span> 
-				<span v-html="timeEvent.description"></span>
-			</p>
-		</li>
-	</ol>	
+	<div class="timeline">
+		<div v-if="title && icon">
+			<animated-title :image="icon" :text="title"></animated-title>
+		</div>
+		<ol class="timeline-list">
+			<li v-for="(timeEvent, index) in timeEvents" :key="index">
+				<h5>{{timeEvent.title}}</h5>
+				<h6 v-if="timeEvent.duration">{{timeEvent.duration}}</h6>
+				<p>
+					<span v-if="timeEvent.intro" class="intro">{{timeEvent.intro}}</span> 
+					<span v-html="timeEvent.description"></span>
+				</p>
+			</li>
+		</ol>
+	</div>
+	
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
+import AnimatedTitle from '@/components/ui/AnimatedTitle.vue'
+
 export default Vue.extend({
+	components: {
+		AnimatedTitle,
+	},
 	props: {
 		timeEvents: {
 			type: Array as () => TimeEvent[],
 			required: true
+		},
+		title: {
+			type: String,
+			required: false
+		},
+		icon: {
+			type: String,
+			required: false
 		}
 	}
 })
@@ -27,7 +46,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 $border: 0.3*$m solid $purple-main;
 
-.timeline {
+.timeline-list {
 	list-style: none;
 	padding: 0 0 0 2*$m;
 	margin: 0 0 0 3*$m;

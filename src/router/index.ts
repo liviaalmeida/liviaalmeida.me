@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import About from '@/views/About.vue'
+import Mobile from '@/views/Mobile.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +10,10 @@ const routes = [
   {
     path: '/',
     name: 'About',
-    component: About
+    components: {
+      default: About,
+      mobile: Mobile
+    }
   },
   {
     path: '/experience',
@@ -16,7 +21,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "knowledge" */ '@/views/Experience.vue')
+    component: () => import(/* webpackChunkName: "experience" */ '@/views/Experience.vue')
   },
   {
     path: '/knowledge',

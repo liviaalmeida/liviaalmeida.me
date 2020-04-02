@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AnimatedIcon from '@/components/AnimatedIcon.vue'
+import AnimatedIcon from '@/components/ui/AnimatedIcon.vue'
 
 export default Vue.extend({
 	components: {

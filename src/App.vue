@@ -4,7 +4,7 @@
       <h1>Lívia Almeida</h1>
       <h2>Front End Developer</h2>
     </header>
-    <div class="view">
+    <div class="desktop">
       <nav id="nav">
         <router-link to="/">Sobre</router-link>
         <router-link to="/experience">Experiência</router-link>
@@ -14,7 +14,9 @@
         <router-view/>
       </div>
     </div>
-
+    <div class="mobile">
+      <router-view name="mobile" />
+    </div>
   </div>
 </template>
 
@@ -24,7 +26,7 @@
 $header-size: 9*$m;
 $nav-width: 14*$m;
 
-html, body, #app, .view {
+html, body, #app, .desktop {
   width: 100%;
   height: 100%;
 }
@@ -34,6 +36,27 @@ html, body, #app, .view {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@media only screen and (min-height: 450px) {
+	.desktop { display: flex; }
+  .mobile { display: none; }
+}
+
+@media only screen and (max-height: 450px) and (min-width: 500px) {
+	.desktop { display: none; }
+  .mobile { display: flex; }
+}
+
+@media only screen and (max-width: 500px) {
+	.desktop { display: none; }
+  .mobile { display: flex; }
+}
+
+.desktop {
   .columns {
     display: flex;
     height: 100%;
@@ -52,9 +75,16 @@ html, body, #app, .view {
       justify-content: space-between;
     }
   }
+}
 
-  * {
-    box-sizing: border-box;
+.mobile {
+  .column {
+    margin: $header-size 3*$m 0;
+    padding-top: 2*$m;
+
+    > * {
+      margin-bottom: 6*$m;
+    }
   }
 }
 
@@ -62,6 +92,7 @@ header {
   width: 100%;
   height: $header-size;
   position: fixed;
+  z-index: 5;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -78,10 +109,6 @@ header {
   h2 {
     font-size: 2.5*$m;
   }
-}
-
-.view {
-  display: flex;
 }
 
 nav {
