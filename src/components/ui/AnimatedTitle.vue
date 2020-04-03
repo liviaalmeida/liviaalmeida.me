@@ -56,14 +56,8 @@ export default Vue.extend({
 		margin: 0;
 		text-align: left;
 		background-color: $purple-main;
-		animation: 2*$animation-time ease-out 0s 1 growLine;
+		@include animation-on-load(no-width-on-load);
 		transform-origin: 0;
-	}
-
-	@keyframes growLine {
-		0% {
-			width: 0;
-		}
 	}
 }
 </style>

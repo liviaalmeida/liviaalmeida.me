@@ -42,8 +42,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-@mixin icon-animation {
-	background-size: 75%;
+@mixin icon-active {
+	background-size: 65%;
 	opacity: 1;
 }
 
@@ -56,15 +56,15 @@ export default Vue.extend({
 	border-radius: 50%;
 	opacity: 0.6;
 	transition: all $animation-time;
-	animation: 2*$animation-time ease-out 0s 1 onIconLoad;
+	@include animation-on-load(on-icon-load);
 
 	&:hover {
-		@include icon-animation;
+		@include icon-active;
 	}
 }
 
-@keyframes onIconLoad {
-	0% { @include icon-animation;	}
+@keyframes on-icon-load {
+	0% { @include icon-active; }
 }
 
 </style>

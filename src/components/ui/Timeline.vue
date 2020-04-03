@@ -76,7 +76,7 @@ $bullet-size: 1.3*$m;
 			left: -3.1*$m;
 			z-index: 2;
 			transition: all $animation-time ease-in;
-			animation: 0.8s ease-out 0s 1 growBall;
+			@include animation-on-load(grow-ball);
 		}
 
 		&:hover:after {
@@ -113,7 +113,7 @@ $bullet-size: 1.3*$m;
 	}
 }
 
-@keyframes growBall {
+@keyframes grow-ball {
 	0% {
 		transform: scale(0);
 	}

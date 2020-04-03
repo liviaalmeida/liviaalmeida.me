@@ -41,9 +41,8 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-
 $height: $m;
-$border-radius: 0.5*$m;
+$border-radius: .5*$m;
 
 .progress-bar {
 	display: inline-flex;
@@ -60,7 +59,7 @@ $border-radius: 0.5*$m;
 		background-color: $purple-main;
 		height: $height;
 		border-radius: $border-radius;
-		animation: 0.8s ease-out 0s 1 onBarLoad;
+		@include animation-on-load(no-width-on-load);
 	}
 }
 
@@ -68,9 +67,5 @@ $border-radius: 0.5*$m;
 	0% { transform: scaleX(1); }
 	50% { transform: scaleX(0); }
 	100% { transform: scaleX(1); }
-}
-
-@keyframes onBarLoad {
-	0% { width: 0; }
 }
 </style>
