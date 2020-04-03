@@ -32,7 +32,8 @@ html, body, #app, .desktop {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: BebasNeue, OpenSans, Helvetica;
+	color: $purple-main;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

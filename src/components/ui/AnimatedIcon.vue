@@ -1,6 +1,5 @@
 <template>
-	<div class="icon" @mouseover="onMouseOver()" @mouseleave="onMouseLeave()">
-	</div>
+	<div class="icon"></div>
 </template>
 
 <script lang="ts">
@@ -19,19 +18,9 @@ export default Vue.extend({
       default: 4,
     }
 	},
-	data() {
-		return {
-			iconSize: 0.5 * this.size,
-			iconSizeHover: 0.6 * this.size,
-		}
-	},
 	mounted() {
 		this.setIconSize()
 		this.setBackgroundImage()
-		this.onMouseOver()
-		setTimeout(() => {
-			this.onMouseLeave()
-		}, 500);
 	},
 	computed: {
 		elStyle(): CSSStyleDeclaration {
@@ -45,35 +34,37 @@ export default Vue.extend({
 			this.elStyle.width = remSize
 			this.elStyle.height = remSize
 		},
-		setOpacity(value: number): void {
-			this.elStyle.opacity = String(value)
-		},
 		setBackgroundImage(): void {
 			this.elStyle.backgroundImage = `url('${this.image}')`
-		},
-		setBackgroundSize(num: number): void {
-			const remSize = helper.numberToRem(num)
-			this.elStyle.backgroundSize = `${remSize} ${remSize}`
-		},
-		onMouseOver(): void {
-			this.setOpacity(1)
-			this.setBackgroundSize(this.iconSizeHover)
-		},
-		onMouseLeave(): void {
-			this.setOpacity(0.6)
-			this.setBackgroundSize(this.iconSize)
 		},
 	}
 })
 </script>
 
 <style lang="scss" scoped>
+@mixin icon-animation {
+	background-size: 75%;
+	opacity: 1;
+}
+
 .icon {
-	display: inline-flex;
+	@include inline-flex;
 	background-color: $purple-main;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 50%;
 	border-radius: 50%;
+	opacity: 0.6;
 	transition: all $animation-time;
+	animation: 2*$animation-time ease-out 0s 1 onIconLoad;
+
+	&:hover {
+		@include icon-animation;
+	}
 }
+
+@keyframes onIconLoad {
+	0% { @include icon-animation;	}
+}
+
 </style>

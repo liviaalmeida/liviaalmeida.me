@@ -52,7 +52,7 @@ $border-radius: 0.5*$m;
 	border-radius: $border-radius;
 
 	&:hover .progress {
-		animation: barGrow ease-in-out 3s infinite;
+		animation: barGrow ease-in-out 4s infinite;
 		transform-origin: 0;
 	}
 
@@ -65,20 +65,12 @@ $border-radius: 0.5*$m;
 }
 
 @keyframes barGrow {
-	0% { 
-		transform: scaleX(1);
-	}
-	50% {
-		transform: scaleX(0);
-	}
-	100% {
-		transform: scaleX(1);
-	}
+	0% { transform: scaleX(1); }
+	50% { transform: scaleX(0); }
+	100% { transform: scaleX(1); }
 }
 
 @keyframes onBarLoad {
-	0% {
-		width: 0;
-	}
+	0% { width: 0; }
 }
 </style>

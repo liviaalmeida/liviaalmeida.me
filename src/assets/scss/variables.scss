@@ -11,3 +11,33 @@ $white: rgb(255,255,255);
 /*-------------  TIMES  -------------*/
 
 $animation-time: 0.4s;
+
+/*-------------  MIXINS  -------------*/
+
+@mixin flex {
+	display: flex;
+}
+
+@mixin inline-flex {
+	display: flex;
+}
+
+@mixin flex-row {
+	@include flex;
+	flex-direction: row;
+}
+
+@mixin inline-flex-row {
+	@include inline-flex;
+	flex-direction: row;
+}
+
+@mixin flex-column {
+	@include flex;
+	flex-direction: column;
+}
+
+@mixin inline-flex-column {
+	@include inline-flex;
+	flex-direction: column;
+}

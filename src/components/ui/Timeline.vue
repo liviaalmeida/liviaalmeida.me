@@ -45,6 +45,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 $border: 0.3*$m solid $purple-main;
+$bullet-size: 1.3*$m;
 
 .timeline-list {
 	list-style: none;
@@ -56,25 +57,25 @@ $border: 0.3*$m solid $purple-main;
 
 	li {
 		position: relative;
-		padding-top: 5px;
+		padding-top: 0.5*$m;
 
 		&:not(:last-child) {
-			margin-bottom: 20px;
+			margin-bottom: 2*$m;
 		}
 
 		&:after {
-			position: absolute;
+			height: $bullet-size;
+			width: $bullet-size;
 			display: block;
+			position: absolute;
 			background: $white;
 			border-radius: 50%;
-			height: 1.3*$m;
-			width: 1.3*$m;
 			border: $border;
 			content: '';
 			top: 0.5*$m;
 			left: -3.1*$m;
 			z-index: 2;
-			transition: background 0.5s ease-in;
+			transition: all $animation-time ease-in;
 			animation: 0.8s ease-out 0s 1 growBall;
 		}
 
@@ -88,7 +89,7 @@ $border: 0.3*$m solid $purple-main;
 
 		h5 {
 			font-family: BebasNeue;
-			font-weight: 500;
+			font-weight: 600;
 			font-size: 2*$m;
 		}
 

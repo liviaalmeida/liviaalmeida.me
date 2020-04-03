@@ -34,18 +34,15 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .animated-title {
 	width: 100%;
-	display: flex;
-	flex-direction: row;
+	@include flex-row;
 
 	.title {
 		width: 100%;
 		margin-left: $m;
-		color: $purple-main;
 		font-family: BebasNeue;
 		font-weight: 600;
 		font-size: 2.4*$m;
-		display: flex;
-		flex-direction: column;
+		@include flex-column;
 		justify-content: center;
 	}
 

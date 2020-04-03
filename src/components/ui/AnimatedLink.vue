@@ -34,8 +34,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .animated-link {
-	display: inline-flex;
-	flex-direction: column;
+	@include inline-flex-column;
 	align-items: center;
 
 	a, a:visited {
