@@ -151,7 +151,7 @@ nav {
   overflow: hidden;
 }
 
-$transition: all 2*$animation-time cubic-bezier(1.0, 0.5, 0.8, 1.0);
+$transition: all $animation-time cubic-bezier(1.0, 0.5, 0.8, 1.0);
 
 .view-enter, .view-enter-to {
   display: none;
