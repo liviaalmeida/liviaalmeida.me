@@ -120,17 +120,24 @@ nav {
   background-color: $purple-secondary;
   padding-top: 15*$m;
 
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      color: $purple-main;
-      font-family: BebasNeue;
-      font-size: 2.2*$m;
-      padding: 0 3*$m 0 $m;
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $purple-main;
+    font-family: BebasNeue;
+    font-size: 2.2*$m;
+    padding: 0 3*$m 0 $m;
+    opacity: 0.5;
+    transition: all $animation-time ease-in-out;
 
-      &.router-link-exact-active {
-        border-right: 0.4*$m solid $purple-main;
-      }
+    &.router-link-exact-active {
+      border-right: 0.4*$m solid $purple-main;
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }
 
