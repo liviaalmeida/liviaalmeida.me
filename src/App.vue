@@ -11,7 +11,9 @@
         <router-link to="/knowledge">Conhecimento</router-link>
       </nav>
       <div class="router-view">
-        <router-view/>
+        <transition name="view">
+          <router-view/>
+        </transition>
       </div>
     </div>
     <div class="mobile">
@@ -146,6 +148,22 @@ nav {
   margin-left: $nav-width;
   width: 100%;
   max-width: 100%;
+  overflow: hidden;
 }
 
+$transition: all 2*$animation-time cubic-bezier(1.0, 0.5, 0.8, 1.0);
+
+.view-enter, .view-enter-to {
+  display: none;
+}
+.view-enter-active {
+  transition: $transition;
+}
+
+.view-leave-to {
+  transform: translateX(20px);
+  overflow-x: hidden;
+  transition: $transition;
+  opacity: 0;
+}
 </style>
