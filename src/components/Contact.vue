@@ -18,6 +18,11 @@ export default Vue.extend({
     return {
       contacts: [
         {
+          image: require('@/assets/icons/linkedin.png'),
+          text: 'Lívia Almeida',
+          href: 'https://linkedin.com/in/livia001'
+        },
+        {
           image: require('@/assets/icons/github.png'),
           text: '@liviaalmeida',
           href: 'https://github.com/liviaalmeida'
