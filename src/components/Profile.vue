@@ -1,9 +1,13 @@
 <template>
 	<div class="profile">
 		<img :src="profilePhoto">
-		<div class="profile-text">
-			<animated-title :image="profileIcon" text="Perfil" />
-			<p>Sou desenvolvedora front-end. Me interesso por arquitetura e qualidade de código, design systems, animações em CSS, computação natural, machine learning e ciência dos dados. Tenho disponibilidade para mudança.
+		<animated-title :image="profileIcon" text="Perfil" :active="active" />
+		<div class="profile-text" @mouseover="active = true" @mouseout="active = false">
+			<p>
+				Sou desenvolvedora front-end. Me interesso por arquitetura e qualidade de código, design systems, animações em CSS, computação natural, machine learning e ciência dos dados. Tenho experiência com JavaScript e TypeScript e sou proficiente em HTML e CSS.
+			</p>
+			<p>
+				Meu objetivo é construir produtos que resolvem os problemas de seus usuários enquanto oferecem ótima usabilidade. Gosto de trabalhar próxima ao time de design, em ambientes altamente colaborativos.
 			</p>
 		</div>
 	</div>
@@ -21,14 +25,15 @@ export default Vue.extend({
 	data() {
 		return {
 			profilePhoto: require('@/assets/images/self.png'),
-      profileIcon: require('@/assets/icons/profile.png'),
+			profileIcon: require('@/assets/icons/profile.png'),
+			active: false,
 		}
 	}
 })
 </script>
 
 <style lang="scss" scoped>
-$photo-size: 20*$m;
+$photo-size: 16*$m;
 
 .profile {
 	display: flex;
@@ -38,6 +43,18 @@ $photo-size: 20*$m;
 
 .profile-text {
 	max-width: 100%;
+	margin-top: .7*$m;
+	
+	p {
+		font-family: OpenSans;
+		font-size: 1.8*$m;
+		text-align: justify;
+		line-height: 1.3;
+
+		&:not(:last-child) {
+			margin-bottom: .7*$m;
+		}
+	}
 }
 
 img {
@@ -45,13 +62,5 @@ img {
 	size: $photo-size;
 	border-radius: 50%;
 	margin-bottom: 2*$m;
-}
-
-p {
-	font-family: OpenSans;
-	font-size: 1.8*$m;
-	text-align: justify;
-	width: 100%;
-	line-height: 1.2;
 }
 </style>
