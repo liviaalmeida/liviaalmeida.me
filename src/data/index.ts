@@ -1,19 +1,25 @@
-import data from './data.json'
+import {
+	experience,
+	presentations,
+	skills,
+	education,
+	languages,
+} from './data.json'
 
 export default {
 	getExperience(): TimeEvent[] {
-		return data.experience as TimeEvent[]
+		return experience as TimeEvent[]
 	},
 	getPresentations(): TimeEvent[] {
-		return data.presentations as TimeEvent[]
+		return presentations as TimeEvent[]
 	},
 	getSkills(): Skill[] {
-		return data.skills as Skill[]
+		return skills as Skill[]
 	},
 	getEducation(): TimeEvent[] {
-		return data.education as TimeEvent[]
+		return education as TimeEvent[]
 	},
 	getLanguages(): TimeEvent[] {
-		return data.languages as TimeEvent[]
+		return languages as TimeEvent[]
 	},
 }
