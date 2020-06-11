@@ -1,8 +1,9 @@
 <template>
 	<div class="programming">
-		<animated-title :image="icon" text="Linguagens" />
+		<animated-title :image="icon" text="Linguagens" :active="active"/>
 		<div class="skills">
-			<div v-for="(skill,index) in skills" :key="index" class="skill">
+			<div v-for="(skill,index) in skills" :key="index" class="skill"
+			@mouseover="active = true" @mouseout="active = false">
 				<span>{{skill.name}}</span>
 				<progress-bar :progress="skill.progress" />
 			</div>
@@ -27,6 +28,7 @@ export default Vue.extend({
 		return {
 			icon: require('@/assets/icons/programming.png'),
 			skills: data.getSkills(),
+			active: false,
 		}
 	}
 })

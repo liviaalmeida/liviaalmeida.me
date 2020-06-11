@@ -1,7 +1,7 @@
 <template>
 	<div class="animated-title">
 		<div class="icon">
-			<animated-icon :image="image" :size="4"/>
+			<animated-icon :image="image" :size="4" :active="active" />
 		</div>
 		<div class="title">
 			<h3>{{text}}</h3>
@@ -19,6 +19,10 @@ export default Vue.extend({
 		AnimatedIcon
 	},
 	props: {
+		active: {
+			type: Boolean,
+			required: false,
+		},
 		image: {
 			type: String,
 			required: true

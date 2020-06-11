@@ -1,10 +1,11 @@
 <template>
 	<div class="timeline">
 		<div v-if="title && icon">
-			<animated-title :image="icon" :text="title"></animated-title>
+			<animated-title :image="icon" :text="title" :active="active"></animated-title>
 		</div>
 		<ol class="timeline-list">
-			<li v-for="(timeEvent, index) in timeEvents" :key="index">
+			<li v-for="(timeEvent, index) in timeEvents" :key="index"
+			@mouseover="active = true" @mouseout="active = false">
 				<h5>{{timeEvent.title}}</h5>
 				<h6 v-if="timeEvent.duration">{{timeEvent.duration}}</h6>
 				<p>
@@ -25,6 +26,11 @@ import AnimatedTitle from '@/components/ui/AnimatedTitle.vue'
 export default Vue.extend({
 	components: {
 		AnimatedTitle,
+	},
+	data() {
+		return {
+			active: false,
+		}
 	},
 	props: {
 		timeEvents: {

@@ -8,6 +8,10 @@ import helper from '@/assets/helpers'
 
 export default Vue.extend({
   props: {
+		active: {
+			type: Boolean,
+			required: false,
+		},
     image: {
       type: String,
       required: true,
@@ -37,6 +41,14 @@ export default Vue.extend({
 		setBackgroundImage(): void {
 			this.elStyle.backgroundImage = `url('${this.image}')`
 		},
+	},
+	watch: {
+		active: function(val: boolean) {
+			const icon = this.$el
+			const activeClass = 'active'
+			if (val) icon.classList.add(activeClass)
+			else icon.classList.remove(activeClass)
+		}
 	}
 })
 </script>
@@ -58,7 +70,7 @@ export default Vue.extend({
 	transition: all $animation-time;
 	@include animation-on-load(on-icon-load);
 
-	&:hover {
+	&:hover, &.active {
 		@include icon-active;
 	}
 }

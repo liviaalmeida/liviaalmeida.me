@@ -1,9 +1,9 @@
 <template>
 	<div class="animated-link">
 		<a class="icon" :href="href">
-			<animated-icon :image="image" :size="3" />
+			<animated-icon :image="image" :size="3" :active="active" />
 		</a>
-		<a class="text" :href="href">{{text}}</a>
+		<a class="text" :href="href" @mouseover="active = true" @mouseout="active = false">{{text}}</a>
 	</div>
 </template>
 
@@ -14,6 +14,11 @@ import AnimatedIcon from '@/components/ui/AnimatedIcon.vue'
 export default Vue.extend({
 	components: {
 		AnimatedIcon
+	},
+	data() {
+		return {
+			active: false,
+		}
 	},
 	props: {
 		image: {
