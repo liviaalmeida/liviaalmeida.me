@@ -48,7 +48,6 @@ img {
 }
 
 p {
-	color: $purple-main;
 	font-family: OpenSans;
 	font-size: 1.8*$m;
 	text-align: justify;

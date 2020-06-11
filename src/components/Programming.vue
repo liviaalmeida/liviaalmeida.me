@@ -40,15 +40,12 @@ export default Vue.extend({
 
 .skills {
 	align-self: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	@include flex-column-around;
 }
 
 .skill {
 	align-self: flex-end;
 	font-family: OpenSans;
-	color: $purple-main;
 	font-size: 1.7*$m;
 	margin: 1.8*$m 0;
 

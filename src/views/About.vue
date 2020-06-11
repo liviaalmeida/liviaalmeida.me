@@ -25,8 +25,6 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .contact {
-	align-content: flex-end;
-	justify-content: space-around;
   height: 100%;
 }
 </style>

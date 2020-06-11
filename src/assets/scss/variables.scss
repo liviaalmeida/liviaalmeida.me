@@ -42,6 +42,11 @@ $animation-time: 0.4s;
 	flex-direction: column;
 }
 
+@mixin flex-column-around {
+	@include flex-column;
+	justify-content: space-around;
+}
+
 @mixin animation-on-load($animation-name) {
 	animation: 2*$animation-time ease-out 0s 1 $animation-name;
 }

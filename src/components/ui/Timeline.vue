@@ -52,7 +52,6 @@ $bullet-size: 1.3*$m;
 	padding: 0 0 0 2*$m;
 	margin: 0 0 0 3*$m;
 	border-left: $border;
-	color: $purple-main;
 	z-index: 0;
 
 	li {

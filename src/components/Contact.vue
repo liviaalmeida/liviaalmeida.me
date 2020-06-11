@@ -40,10 +40,8 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .contact {
-	display: flex;
-	flex-direction: column;
+	@include flex-column-around;
 	align-content: flex-end;
-	justify-content: space-around;
 
   > *:not(:last-of-type) {
     margin-bottom: 5*$m;

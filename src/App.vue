@@ -116,11 +116,8 @@ nav {
   width: $nav-width;
   height: 100%;
   position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  @include flex-column-around;
   background-color: $purple-secondary;
-  color: $purple-main;
   padding-top: 15*$m;
 
     a {
