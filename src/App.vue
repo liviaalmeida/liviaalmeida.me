@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <header>
+      <Locale class="locale" />
       <h1>Lívia Almeida</h1>
-      <h2>Front End Developer</h2>
+      <h2>Front-end Developer</h2>
     </header>
     <div class="desktop">
       <nav id="nav">
@@ -21,6 +22,17 @@
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import Locale from '@/components/Locale.vue'
+
+export default Vue.extend({
+  components: {
+    Locale
+  }
+})
+</script>
 
 <style lang="scss">
 @import '~@/assets/scss/reset.scss';
@@ -104,6 +116,12 @@ header {
   color: $white;
   font-family: BebasNeue;
   font-weight: 600;
+
+  .locale {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
 
   h1 {
     font-size: 3.5*$m;
