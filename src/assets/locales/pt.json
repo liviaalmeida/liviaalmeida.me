@@ -1,0 +1,74 @@
+{
+  "title": {
+		"education": "Formação",
+    "experience": "Experiência Profissional",
+		"languages": "Idiomas",
+		"presentations": "Apresentações",
+		"profile": "Perfil",
+		"programming": "Linguagens"
+	},
+	"education": [
+		{
+			"title": "UFMG",
+			"duration": "conclusão prevista 06/2021",
+			"intro": "Bacharelado",
+			"description": "Ciência da Computação"
+		}
+	],
+  "experience": [
+		{
+			"title": "BRQ Digital Solutions",
+			"duration": "mai 2020 - presente",
+			"intro": "Front-end Developer:",
+			"description": "atuação em front-end utilizando os frameworks Vue.Js e React Native. Vue.js para PWAs."
+		},
+		{
+			"title": "Take",
+			"duration": "jun 2019 - mai 2020",
+			"intro": "Full Stack Developer:",
+			"description": "atuação em front-end utilizando os frameworks AngularJS e Vue.JS, back-end com .NET core e soluções de inteligência artificial com Python."
+		},
+		{
+			"title": "Take",
+			"duration": "ago 2018 - mai 2019",
+			"intro": "AI Team Internship:",
+			"description": "atuação em front-end e back-end, soluções de inteligência artificial com Python e análises de modelos de NLP baseados em intenções e entidades."
+		},
+		{
+			"title": "Take",
+			"duration": "jan 2018 - jul 2019",
+			"intro": "Development Internship:",
+			"description": "atuação no front-end da plataforma BLiP.ai utilizando os frameworks AngularJS e Vue.JS."
+		}
+  ],
+	"languages": [
+		{
+			"title": "Inglês",
+			"intro": "Fluência:",
+			"description": "leitura fluente, escrita fluente, fala fluente<br>IELTS 8.0 - 25/10/2014"
+		},
+		{
+			"title": "Francês",
+			"intro": "Fluência:",
+			"description": "leitura média, escrita básica, fala básica<br>Nível A1.3"
+		}
+	],
+  "presentations": [
+		{
+			"title": "The Developer's Conference",
+			"duration": "14 jun 2019",
+			"intro": "Word Embedding e Aplicação",
+			"description": "Como desenvolver uma aplicação para um problema recorrente de NLP utilizando o Word Embedding? Exploração da tarefa de correção ortográfica."
+		},
+		{
+			"title": "Developer Circle",
+			"duration": "19 fev 2019",
+			"intro": "Como Aprender Usando Texto?",
+			"description": "O uso de palavras em modelos matemáticos depende da sua transformação em representações exatas. Um algoritmo que pode fazer isso é o Word Embedding."
+		}
+	],
+	"profile": [
+		"Sou desenvolvedora front-end. Me interesso por arquitetura e qualidade de código, design systems, animações em CSS, computação natural, machine learning e ciência dos dados. Tenho experiência com JavaScript e TypeScript e sou proficiente em HTML e CSS.",
+		"Meu objetivo é construir produtos que resolvem os problemas de seus usuários enquanto oferecem ótima usabilidade. Gosto de trabalhar próxima ao time de design, em ambientes altamente colaborativos."
+	]
+}

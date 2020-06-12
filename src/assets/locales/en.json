@@ -1,0 +1,75 @@
+{
+  "message": "hello i18n !!",
+  "title": {
+		"education": "Education",
+    "experience": "Professional Experience",
+		"languages": "Languages",
+		"presentations": "Talks",
+		"profile": "About",
+		"programming": "Programming Skills"
+  },
+	"education": [
+		{
+			"title": "UFMG",
+			"duration": "due to 06/2021",
+			"intro": "Bachelor's Degree",
+			"description": "Computer Science"
+		}
+	],
+  "experience": [
+		{
+			"title": "BRQ Digital Solutions",
+			"duration": "may 2020 - present",
+			"intro": "Front-end Developer:",
+			"description": "working as a front-end developer using frameworks React Native e Vue.JS. Using Vue.JS for progressive web apps."
+		},
+		{
+			"title": "Take",
+			"duration": "june 2019 - may 2020",
+			"intro": "Full Stack Developer:",
+			"description": "worked as a full stack developer using AngularJS and Vue.JS for front-end, .NET core for back-end, and occasionally Python for NLP models analysis."
+		},
+		{
+			"title": "Take",
+			"duration": "aug 2018 - may 2019",
+			"intro": "AI Team Internship:",
+			"description": "worked as a front-end intern using AngularJS, provided solutions on Artificial Intelligence using Python, and analyzed NLP models based on intents and entities."
+		},
+		{
+			"title": "Take",
+			"duration": "jan 2018 - july 2019",
+			"intro": "Development Internship:",
+			"description": "worked as a front-end intern in the chatbot building platform BLiP.ai using frameworks AngularJS and Vue.JS."
+		}
+  ],
+	"languages": [
+		{
+			"title": "English",
+			"intro": "Proficiency:",
+			"description": "fluent reading, fluent writing, fluent speech<br>IELTS 8.0 - 25/10/2014"
+		},
+		{
+			"title": "French",
+			"intro": "Proficiency:",
+			"description": "intermediate reading, basic writing, basic speech<br>Nível A1.3"
+		}
+	],
+  "presentations": [
+		{
+			"title": "The Developer's Conference",
+			"duration": "June 14th 2019",
+			"intro": "Word Embedding and Application",
+			"description": "How to develop an application to solve a recurring NLP problem using the Word Embedding algorithm? We are going to explore the spell check task."
+		},
+		{
+			"title": "Developer Circle",
+			"duration": "Feb 19th 2019",
+			"intro": "How To Learn Using Text?",
+			"description": "To use words in mathematical models, we rely on transforming them into some form of numerical representation. One of many algorithms that perform such task is the Word Embedding."
+		}
+	],
+	"profile": [
+		"I'm a front-end developer. I'm interested in code architecture and code quality, design systems, CSS animations, natural computing, machine learning and data science. I have experience with JavaScript and TypeScript and I am proficient in HTML and CSS.",
+		"My goal is to build products that solve its users' problems while providing a great usability. I like to work closely with the design team, in highly collaborative environments."
+	]
+}
