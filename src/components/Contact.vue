@@ -1,7 +1,11 @@
 <template>
   <div class="contact">
-		<animated-link v-for="(contact, index) in contacts" :key="index"
-		:image="contact.image" :text="contact.text" :href="contact.href" />
+		<animated-link
+      v-for="(contact, index) in contacts" :key="index"
+      :image="contact.image"
+      :text="contact.text"
+      :href="contact.href"
+    />
   </div>
 </template>
 

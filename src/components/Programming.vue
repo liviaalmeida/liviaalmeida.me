@@ -1,9 +1,16 @@
 <template>
 	<div class="programming">
-		<animated-title :image="icon" text="Linguagens" :active="active"/>
+		<animated-title
+			:image="icon"
+			:text="$t('title.programming')"
+			:active="active"
+		/>
 		<div class="skills">
-			<div v-for="(skill,index) in skills" :key="index" class="skill"
-			@mouseover="active = true" @mouseout="active = false">
+			<div
+				class="skill"
+				v-for="(skill,index) in skills" :key="index"
+				@mouseover="active = true" @mouseout="active = false"
+			>
 				<span>{{skill.name}}</span>
 				<progress-bar :progress="skill.progress" />
 			</div>
@@ -13,11 +20,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-
 import AnimatedTitle from '@/components/ui/AnimatedTitle.vue'
 import ProgressBar from '@/components/ui/ProgressBar.vue'
-
-import data from '@/data'
 
 export default Vue.extend({
 	components: {
@@ -27,8 +31,41 @@ export default Vue.extend({
 	data() {
 		return {
 			icon: require('@/assets/icons/programming.png'),
-			skills: data.getSkills(),
 			active: false,
+			skills: [
+				{
+					"name": "C/C++",
+					"progress": 0.8
+				},
+				{
+					"name": "C#",
+					"progress": 0.3
+				},
+				{
+					"name": "CSS",
+					"progress": 0.9
+				},
+				{
+					"name": "HTML",
+					"progress": 0.8
+				},
+				{
+					"name": "JavaScript",
+					"progress": 0.9
+				},
+				{
+					"name": "Python",
+					"progress": 0.85
+				},
+				{
+					"name": "SQL",
+					"progress": 0.7
+				},
+				{
+					"name": "TypeScript",
+					"progress": 0.9
+				},
+			],
 		}
 	}
 })

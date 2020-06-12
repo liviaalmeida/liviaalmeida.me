@@ -1,13 +1,17 @@
 <template>
 	<div class="profile">
 		<img :src="profilePhoto">
-		<animated-title :image="profileIcon" text="Perfil" :active="active" />
-		<div class="profile-text" @mouseover="active = true" @mouseout="active = false">
-			<p>
-				Sou desenvolvedora front-end. Me interesso por arquitetura e qualidade de código, design systems, animações em CSS, computação natural, machine learning e ciência dos dados. Tenho experiência com JavaScript e TypeScript e sou proficiente em HTML e CSS.
-			</p>
-			<p>
-				Meu objetivo é construir produtos que resolvem os problemas de seus usuários enquanto oferecem ótima usabilidade. Gosto de trabalhar próxima ao time de design, em ambientes altamente colaborativos.
+		<animated-title
+			:image="profileIcon"
+			:text="$t('title.profile')"
+			:active="active"
+		/>
+		<div
+			class="profile-text"
+			@mouseover="active = true" @mouseout="active = false"
+		>
+			<p v-for="(paragraph, p) in $t('profile')" :key="p">
+				{{paragraph}}
 			</p>
 		</div>
 	</div>

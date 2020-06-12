@@ -1,15 +1,16 @@
 <template>
   <div>
-		<timeline :timeEvents="skills" :icon="icon" title="Formação" />
+		<timeline
+      :icon="icon"
+      :timeEvents="$t('education')"
+      :title="$t('title.education')"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
 import Timeline from '@/components/ui/Timeline.vue'
-
-import data from '@/data'
 
 export default Vue.extend({
   components: {
@@ -18,7 +19,6 @@ export default Vue.extend({
   data() {
     return {
 			icon: require('@/assets/icons/education.png'),
-			skills: data.getEducation(),
     }
   },
 })
