@@ -6,9 +6,9 @@
     </header>
     <div class="desktop">
       <nav id="nav">
-        <router-link to="/">Sobre</router-link>
-        <router-link to="/experience">Experiência</router-link>
-        <router-link to="/knowledge">Conhecimento</router-link>
+        <router-link to="/">{{$t('nav.about')}}</router-link>
+        <router-link to="/experience">{{$t('nav.experience')}}</router-link>
+        <router-link to="/knowledge">{{$t('nav.knowledge')}}</router-link>
       </nav>
       <div class="router-view">
         <transition name="view">
