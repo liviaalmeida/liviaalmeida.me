@@ -17,20 +17,14 @@ const routes = [
   },
   {
     path: '/experience',
-    name: 'Experiência',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "experience" */ '@/views/Experience.vue')
+    name: 'Experience',
+    component: () => import('@/views/Experience.vue')
   },
   {
     path: '/knowledge',
-    name: 'Conhecimento',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "knowledge" */ '@/views/Knowledge.vue')
-  },
+    name: 'Knowledge',
+    component: () => import('@/views/Knowledge.vue')
+  }
 ]
 
 const router = new VueRouter({
