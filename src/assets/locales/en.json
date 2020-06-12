@@ -1,5 +1,9 @@
 {
-  "message": "hello i18n !!",
+  "nav": {
+		"about": "About",
+		"experience": "Experience",
+		"knowledge": "Knowledge"
+	},
   "title": {
 		"education": "Education",
     "experience": "Professional Experience",
@@ -10,7 +14,7 @@
   },
 	"education": [
 		{
-			"title": "UFMG",
+			"title": "Universidade Federal de Minas Gerais (UFMG)",
 			"duration": "due to 06/2021",
 			"intro": "Bachelor's Degree",
 			"description": "Computer Science"
@@ -21,19 +25,19 @@
 			"title": "BRQ Digital Solutions",
 			"duration": "may 2020 - present",
 			"intro": "Front-end Developer:",
-			"description": "working as a front-end developer using frameworks React Native e Vue.JS. Using Vue.JS for progressive web apps."
+			"description": "working with frameworks React Native e Vue.JS. Using Vue.JS for progressive web apps."
 		},
 		{
 			"title": "Take",
 			"duration": "june 2019 - may 2020",
 			"intro": "Full Stack Developer:",
-			"description": "worked as a full stack developer using AngularJS and Vue.JS for front-end, .NET core for back-end, and occasionally Python for NLP models analysis."
+			"description": "worked with AngularJS and Vue.JS for front-end, .NET core for back-end, and occasionally Python for NLP models analysis."
 		},
 		{
 			"title": "Take",
 			"duration": "aug 2018 - may 2019",
 			"intro": "AI Team Internship:",
-			"description": "worked as a front-end intern using AngularJS, provided solutions on Artificial Intelligence using Python, and analyzed NLP models based on intents and entities."
+			"description": "worked with AngularJS, provided solutions on Artificial Intelligence using Python, and analyzed NLP models based on intents and entities."
 		},
 		{
 			"title": "Take",

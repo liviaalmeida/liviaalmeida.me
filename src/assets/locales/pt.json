@@ -1,4 +1,9 @@
 {
+	"nav": {
+		"about": "Sobre",
+		"experience": "Experiência",
+		"knowledge": "Conhecimento"
+	},
   "title": {
 		"education": "Formação",
     "experience": "Experiência Profissional",
