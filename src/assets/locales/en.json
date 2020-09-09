@@ -5,6 +5,7 @@
 		"knowledge": "Knowledge"
 	},
   "title": {
+		"position": "Front-end Developer",
 		"education": "Education",
     "experience": "Professional Experience",
 		"languages": "Languages",
@@ -31,7 +32,7 @@
 			"title": "Take",
 			"duration": "june 2019 - may 2020",
 			"intro": "Full Stack Developer:",
-			"description": "worked with AngularJS and Vue.JS for front-end, .NET core for back-end, and occasionally Python for NLP models analysis."
+			"description": "worked with AngularJS and VueJS for front-end, .NET core for back-end, and occasionally Python for NLP models analysis."
 		},
 		{
 			"title": "Take",
@@ -43,7 +44,7 @@
 			"title": "Take",
 			"duration": "jan 2018 - july 2019",
 			"intro": "Development Internship:",
-			"description": "worked as a front-end intern in the chatbot building platform BLiP.ai using frameworks AngularJS and Vue.JS."
+			"description": "worked as a front-end intern in the chatbot building platform BLiP.ai using frameworks AngularJS and VueJS."
 		}
   ],
 	"languages": [

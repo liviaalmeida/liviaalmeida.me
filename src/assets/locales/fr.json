@@ -1,0 +1,80 @@
+{
+  "nav": {
+		"about": "Sur",
+		"experience": "Expérience",
+		"knowledge": "Connaissance"
+	},
+  "title": {
+		"position": "Développeuse Front-end",
+		"education": "Education",
+    "experience": "Expérience Professionnelle",
+		"languages": "Langues",
+		"presentations": "Conférence",
+		"profile": "Sur",
+		"programming": "Compétences de Programmation"
+  },
+	"education": [
+		{
+			"title": "Université Fédérale de Minas Gerais (UFMG)",
+			"duration": "terminée en 06/2021",
+			"intro": "Baccalauréat",
+			"description": "Informatique"
+		}
+	],
+  "experience": [
+		{
+			"title": "Questrade",
+			"duration": "juin 2020 - aujourd'hui",
+			"intro": "Ingénieure Front-end:",
+			"description": "travaillant comme ingénieure front-end pour une plateforme financière spécialisée dans le trading utilisant Angular8+."
+		},
+		{
+			"title": "Take",
+			"duration": "juin 2019 - avr 2020",
+			"intro": "Développeuse Full Stack:",
+			"description": "j'ai travaillé comme développeuse full stack utilisant AngularJS et VueJS pour front-end, .NET core pour back-end, et occasionnellement Python pour analyses de modèles NLP."
+		},
+		{
+			"title": "Take",
+			"duration": "août 2018 - mai 2019",
+			"intro": "Stage dans l'équipe d'IA:",
+			"description": "j'ai travaillé comme interne front-end utilisant AngularJS, j'ai fourni des solutions sur l'intelligence artificielle en utilisant Python, et j'ai analysé des modelès NLP basés sur des intentions et entités."
+		},
+		{
+			"title": "Take",
+			"duration": "jan 2018 - juill 2019",
+			"intro": "Stage de Développement:",
+			"description": "j'ai travaillé comme interne front-end dans la plateforme de construction de chatbot BLiP.ai utilisant des frameworks AngularJS et VueJS."
+		}
+  ],
+	"languages": [
+		{
+			"title": "Anglais",
+			"intro": "Compétence:",
+			"description": "compétente en lecture, compétente en écriture, compétente à l'oral<br>IELTS 8.0 - 25/10/2014"
+		},
+		{
+			"title": "Français",
+			"intro": "Compétence:",
+			"description": "intermediáire en lecture, débutant en écriture, débutant à l'oral<br>Niveau A1.3"
+		}
+	],
+  "presentations": [
+		{
+			"title": "The Developer's Conference",
+			"duration": "14 Juin 2019",
+			"intro": "Word Embedding et Application",
+			"description": "Comment développer une application pour résoudre un problème récurrent NLP utilisant l'algorythme Word Embedding? Nous explorons la correction orthographique."
+		},
+		{
+			"title": "Developer Circle",
+			"duration": "19 Fev 2019",
+			"intro": "Comment Apprendre en Utilisant un Texte?",
+			"description": "Pour utiliser les mots en modèle mathématique, nous comptons sur leur transformation en une forme de représentation numérique. Un des nombreux algorythmes qui réalise cette tâche est le Word Embedding."
+		}
+	],
+	"profile": [
+		"Mon objectif est de construire des produits qui résolvent les problèmes d'utilisateurs pour qu'ils fournissent une bonne utilisabilité. J'aime bien travailler proche des équipes de design, en haute collaboration environnementale.",
+		"Mes principaux intérêts sont l'architecture du code et sa qualité, design systems, et les animations CSS. Je suis compétente en JavaScript et TypeScript, ayant travaillé principalmente avec les frameworks Angular et Vue."
+	]
+}

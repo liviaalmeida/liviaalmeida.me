@@ -5,6 +5,7 @@
 		"knowledge": "Conhecimento"
 	},
   "title": {
+		"position": "Desenvolvedora Front-end",
 		"education": "Formação",
     "experience": "Experiência Profissional",
 		"languages": "Idiomas",
@@ -31,7 +32,7 @@
 			"title": "Take",
 			"duration": "jun 2019 - mai 2020",
 			"intro": "Full Stack Developer:",
-			"description": "atuação em front-end utilizando os frameworks AngularJS e Vue.JS, back-end com .NET core e soluções de inteligência artificial com Python."
+			"description": "atuação em front-end utilizando os frameworks AngularJS e VueJS, back-end com .NET core e soluções de inteligência artificial com Python."
 		},
 		{
 			"title": "Take",
@@ -43,7 +44,7 @@
 			"title": "Take",
 			"duration": "jan 2018 - jul 2019",
 			"intro": "Development Internship:",
-			"description": "atuação no front-end da plataforma BLiP.ai utilizando os frameworks AngularJS e Vue.JS."
+			"description": "atuação no front-end da plataforma BLiP.ai utilizando os frameworks AngularJS e VueJS."
 		}
   ],
 	"languages": [
