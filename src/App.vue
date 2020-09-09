@@ -3,7 +3,7 @@
     <header>
       <Locale class="locale" />
       <h1>Lívia Almeida</h1>
-      <h2>Front-end Developer</h2>
+      <h2>{{$t('title.position')}}</h2>
     </header>
     <div class="desktop">
       <nav id="nav">
