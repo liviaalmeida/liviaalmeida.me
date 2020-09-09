@@ -22,10 +22,10 @@
 	],
   "experience": [
 		{
-			"title": "BRQ Digital Solutions",
-			"duration": "may 2020 - present",
-			"intro": "Front-end Developer:",
-			"description": "working with frameworks React Native e Vue.JS. Using Vue.JS for progressive web apps."
+			"title": "Questrade",
+			"duration": "june 2020 - present",
+			"intro": "Front-end Engineer:",
+			"description": "working as a front-end engineer for a financial platform specialized in trading using Angular8+."
 		},
 		{
 			"title": "Take",
@@ -73,7 +73,7 @@
 		}
 	],
 	"profile": [
-		"I'm a front-end developer. I'm interested in code architecture and code quality, design systems, CSS animations, natural computing, machine learning and data science. I have experience with JavaScript and TypeScript and I am proficient in HTML and CSS.",
-		"My goal is to build products that solve its users' problems while providing a great usability. I like to work closely with the design team, in highly collaborative environments."
+		"My goal is to build products that solve its users' problems while providing a great usability. I like to work closely with the design team, in highly collaborative environments.",
+		"My main interests are code architecture and code quality, design systems, and CSS animations. I am proficient in both JavaScript and TypeScript, having worked mainly with the frameworks Angular and Vue."
 	]
 }

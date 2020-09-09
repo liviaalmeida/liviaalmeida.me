@@ -22,10 +22,10 @@
 	],
   "experience": [
 		{
-			"title": "BRQ Digital Solutions",
-			"duration": "mai 2020 - presente",
-			"intro": "Front-end Developer:",
-			"description": "atuação em front-end utilizando os frameworks Vue.Js e React Native. Vue.js para PWAs."
+			"title": "Questrade",
+			"duration": "jun 2020 - presente",
+			"intro": "Front-end Engineer:",
+			"description": "atuando como engenheira front-end em uma plataforma financeira especializada em trading usando o framework Angular8+."
 		},
 		{
 			"title": "Take",
@@ -73,7 +73,7 @@
 		}
 	],
 	"profile": [
-		"Sou desenvolvedora front-end. Me interesso por arquitetura e qualidade de código, design systems, animações em CSS, computação natural, machine learning e ciência dos dados. Tenho experiência com JavaScript e TypeScript e sou proficiente em HTML e CSS.",
-		"Meu objetivo é construir produtos que resolvem os problemas de seus usuários enquanto oferecem ótima usabilidade. Gosto de trabalhar próxima ao time de design, em ambientes altamente colaborativos."
+		"Meu objetivo é construir produtos que resolvem os problemas de seus usuários enquanto oferecem ótima usabilidade. Gosto de trabalhar próxima ao time de design, em ambientes altamente colaborativos.",
+		"Me interesso por arquitetura e qualidade de código, design systems, e animações em CSS. Tenho experiência com JavaScript e TypeScript, tendo trabalhado principalmente com os frameworks Angular e Vue."
 	]
 }
