@@ -73,20 +73,22 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .programming {
-	display: flex;
-	flex-direction: column;
+	@include flex-column;
+	justify-content: space-between;
+	flex-grow: 1;
 }
 
 .skills {
-	align-self: center;
 	@include flex-column-around;
+	align-self: center;
+	flex-grow: 1;
 }
 
 .skill {
 	align-self: flex-end;
 	font-family: OpenSans;
 	font-size: 1.7*$m;
-	margin: 1.8*$m 0;
+	margin-top: 3*$m;
 
 	span {
 		margin-right: 1.5*$m;
