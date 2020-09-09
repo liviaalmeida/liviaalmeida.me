@@ -13,7 +13,7 @@ import Vue from 'vue'
 export default Vue.extend({
 	data() {
 		return {
-			langs: ['pt', 'en']
+			langs: ['en', 'fr', 'pt']
 		}
 	},
 	mounted() {
@@ -35,6 +35,7 @@ export default Vue.extend({
 .locale {
 	label {
 		font-weight: 400;
+		font-size: 20px;
 
 		&:not(:last-child):after {
 			content: '|';
@@ -43,6 +44,7 @@ export default Vue.extend({
 
 		span {
 			opacity: .5;
+			cursor: pointer;
 		}
 
 		input {
