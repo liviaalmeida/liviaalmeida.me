@@ -1,6 +1,6 @@
 {
   "nav": {
-		"about": "Sur",
+		"about": "À propos de moi",
 		"experience": "Expérience",
 		"knowledge": "Connaissance"
 	},
@@ -10,7 +10,7 @@
     "experience": "Expérience Professionnelle",
 		"languages": "Langues",
 		"presentations": "Conférence",
-		"profile": "Sur",
+		"profile": "À propos de moi",
 		"programming": "Compétences de Programmation"
   },
 	"education": [
@@ -74,7 +74,7 @@
 		}
 	],
 	"profile": [
-		"Mon objectif est de construire des produits qui résolvent les problèmes d'utilisateurs pour qu'ils fournissent une bonne utilisabilité. J'aime bien travailler proche des équipes de design, en haute collaboration environnementale.",
-		"Mes principaux intérêts sont l'architecture du code et sa qualité, design systems, et les animations CSS. Je suis compétente en JavaScript et TypeScript, ayant travaillé principalmente avec les frameworks Angular et Vue."
+		"Mon objectif est de construire des produits qui résolvent des problèmes d'utilisateurs afin qu'ils fournissent une bonne utilisabilité. J'apprécie travailler en étroite collaboration avec les équipes de design, et particulièrement dans des environnements de travail coopératifs.",
+		"Je m'intéresse principalement à l'architecture du code et sa qualité, design systems, et les animations CSS. J'ai acquis une très bonne maîtrise de JavaScript et TypeScript, ayant notamment travaillé avec les frameworks Angular et Vue."
 	]
 }
