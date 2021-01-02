@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <Header />
-    <router-view class="app-view"/>
+		<div class="app-loading" v-if="loading">
+			<img :src="require('@/assets/images/self.png')">
+		</div>
+    <router-view class="app-view" v-else />
   </div>
 </template>
 
@@ -12,12 +15,22 @@ import Header from '@/components/Header.vue'
 export default Vue.extend({
   components: {
     Header,
-  },
+	},
+	data() {
+		return {
+			loading: true,
+		}
+	},
+	mounted() {
+		setTimeout(() => { this.loading = false }, 2000)
+	},
 })
 </script>
 
 <style lang="scss">
 @import '~@/assets/scss/reset.scss';
+
+$loader-img: 250px;
 
 html, body, #app {
   width: 100%;
@@ -35,15 +48,41 @@ html, body, #app {
   }
 }
 
-.app-view {
-  padding: 15*$m 3*$m 3*$m;
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-	display: flex;
-	flex-direction: column;
-	gap: 60px;
-	max-width: 650px;
-	margin: 0 auto;
+.app {
+	&-loading, &-view {
+		padding: 15*$m 3*$m 3*$m;
+		width: 100%;
+		display: flex;
+	}
+
+	&-loading {
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			height: $loader-img;
+			width: $loader-img;
+			border-radius: 50%;
+			animation: appear .5s linear 0s 1 forwards, spin 6s linear .5s infinite forwards;
+		}
+	}
+
+	&-view {
+		flex-direction: column;
+		margin: 0 auto;
+		max-width: 100%;
+		overflow: hidden;
+		gap: 60px;
+		max-width: 650px;
+	}
+}
+
+@keyframes appear {
+	0% { transform: translateY(-100vh); }
+}
+
+@keyframes spin {
+	100% { transform: rotateY(720deg); }
 }
 </style>
