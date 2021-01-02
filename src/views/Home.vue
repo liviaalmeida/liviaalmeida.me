@@ -2,10 +2,10 @@
   <div class="home">
 		<profile />
 		<work />
-		<presentations />
 		<programming />
-		<languages />
+		<presentations />
 		<education />
+		<languages />
 		<contact />
   </div>
 </template>
