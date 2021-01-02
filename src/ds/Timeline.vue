@@ -5,12 +5,17 @@
 			:text="title" :active="active" />
 		</div>
 		<ol class="timeline-list">
-			<li v-for="(timeEvent, index) in timeEvents" :key="index"
-			@mouseover="active = true" @mouseout="active = false">
-				<h5>{{timeEvent.title}}</h5>
-				<h6 v-if="timeEvent.duration">{{timeEvent.duration}}</h6>
+			<li v-for="(timeEvent, index) in timeEvents"
+			:key="index" @mouseover="active = true"
+			@mouseout="active = false">
+				<h5>{{ timeEvent.title }}</h5>
+				<h6 v-if="timeEvent.duration">
+					{{ timeEvent.duration }}
+				</h6>
 				<p>
-					<span v-if="timeEvent.intro" class="intro">{{timeEvent.intro}}</span> 
+					<span v-if="timeEvent.intro" class="intro">
+						{{ timeEvent.intro }}
+					</span> 
 					<span v-html="timeEvent.description"></span>
 				</p>
 			</li>
