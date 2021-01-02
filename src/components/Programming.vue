@@ -1,16 +1,14 @@
 <template>
 	<div class="programming">
 		<AnimatedTitle
-			:image="icon"
+			:image="require('@/assets/icons/programming.png')"
 			:text="$t('title.programming')"
 			:active="active"
 		/>
 		<div class="skills">
-			<div
-				class="skill"
-				v-for="(skill,index) in skills" :key="index"
-				@mouseover="active = true" @mouseout="active = false"
-			>
+			<div class="skill"
+			v-for="(skill,index) in skills" :key="index"
+			@mouseover="active = true" @mouseout="active = false">
 				<span>{{skill.name}}</span>
 				<ProgressBar :progress="skill.progress" />
 			</div>
@@ -24,7 +22,6 @@ import Vue from 'vue'
 export default Vue.extend({
 	data() {
 		return {
-			icon: require('@/assets/icons/programming.png'),
 			active: false,
 			skills: [
 				{

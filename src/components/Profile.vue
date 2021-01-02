@@ -1,9 +1,9 @@
 <template>
 	<div class="profile">
-		<img :src="profilePhoto">
+		<img :src="require('@/assets/images/self.png')">
 		<div>
 			<AnimatedTitle
-			:image="profileIcon"
+			:image="require('@/assets/icons/profile.png')"
 			:text="$t('title.profile')"
 			:active="active" />
 			<div class="profile-text"
@@ -24,11 +24,9 @@ import Vue from 'vue'
 export default Vue.extend({
 	data() {
 		return {
-			profilePhoto: require('@/assets/images/self.png'),
-			profileIcon: require('@/assets/icons/profile.png'),
 			active: false,
 		}
-	}
+	},
 })
 </script>
 

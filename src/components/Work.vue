@@ -1,7 +1,7 @@
 <template>
   <div>
 		<Timeline
-      :icon="icon"
+      :icon="require('@/assets/icons/work.png')"
       :timeEvents="$t('experience')"
       :title="$t('title.experience')"
     />
@@ -12,10 +12,6 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  data() {
-    return {
-			icon: require('@/assets/icons/work.png'),
-    }
-  },
+  functional: true,
 })
 </script>

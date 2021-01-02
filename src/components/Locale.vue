@@ -1,7 +1,8 @@
 <template>
 	<div class="locale">
-		<label v-for="(lang, l) in langs" :key="l">
-			<input type="radio" name="lang" :value="lang" @click="updateLocale">
+		<label v-for="lang in langs" :key="lang">
+			<input type="radio" name="lang"
+			:value="lang" @click="updateLocale">
 			<span>{{lang}}</span>
 		</label>
 	</div>
