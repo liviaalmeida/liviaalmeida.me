@@ -24,7 +24,7 @@
   "experience": [
 		{
 			"title": "Questrade",
-			"duration": "juin 2020 - aujourd'hui",
+			"duration": "juin 2020 - dec 2020",
 			"intro": "Ingénieure Front-end:",
 			"description": "travaillant comme ingénieure front-end pour une plateforme financière spécialisée dans le trading utilisant Angular8+."
 		},
@@ -36,15 +36,9 @@
 		},
 		{
 			"title": "Take",
-			"duration": "août 2018 - mai 2019",
-			"intro": "Stage dans l'équipe d'IA:",
-			"description": "j'ai travaillé comme interne front-end utilisant AngularJS, j'ai fourni des solutions sur l'intelligence artificielle en utilisant Python, et j'ai analysé des modelès NLP basés sur des intentions et entités."
-		},
-		{
-			"title": "Take",
-			"duration": "jan 2018 - juill 2019",
+			"duration": "jan 2018 - mai 2019",
 			"intro": "Stage de Développement:",
-			"description": "j'ai travaillé comme interne front-end dans la plateforme de construction de chatbot BLiP.ai utilisant des frameworks AngularJS et VueJS."
+			"description": "j'ai travaillé comme interne front-end dans la plateforme de construction de chatbot BLiP.ai utilisant des frameworks AngularJS et VueJS, j'ai fourni des solutions sur l'intelligence artificielle en utilisant Python, et j'ai analysé des modelès NLP basés sur des intentions et entités."
 		}
   ],
 	"languages": [
