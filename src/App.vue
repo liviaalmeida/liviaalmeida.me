@@ -1,46 +1,25 @@
 <template>
   <div id="app">
-    <header>
-      <Locale class="locale" />
-      <h1>Lívia Almeida</h1>
-      <h2>{{$t('title.position')}}</h2>
-    </header>
-    <div class="desktop">
-      <nav id="nav">
-        <router-link to="/">{{$t('nav.about')}}</router-link>
-        <router-link to="/experience">{{$t('nav.experience')}}</router-link>
-        <router-link to="/knowledge">{{$t('nav.knowledge')}}</router-link>
-      </nav>
-      <div class="router-view">
-        <transition name="view">
-          <router-view/>
-        </transition>
-      </div>
-    </div>
-    <div class="mobile">
-      <router-view name="mobile" />
-    </div>
+    <Header />
+    <router-view class="app-view"/>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Locale from '@/components/Locale.vue'
+import Header from '@/components/Header.vue'
 
 export default Vue.extend({
   components: {
-    Locale
-  }
+    Header,
+  },
 })
 </script>
 
 <style lang="scss">
 @import '~@/assets/scss/reset.scss';
 
-$header-size: 9*$m;
-$nav-width: 14*$m;
-
-html, body, #app, .desktop {
+html, body, #app {
   width: 100%;
   height: 100%;
 }
@@ -56,132 +35,15 @@ html, body, #app, .desktop {
   }
 }
 
-@media only screen and (min-height: 450px) {
-	.desktop { display: flex; }
-  .mobile { display: none; }
-}
-
-@media only screen and (max-height: 450px) and (min-width: 500px) {
-	.desktop { display: none; }
-  .mobile { display: flex; }
-}
-
-@media only screen and (max-width: 500px) {
-	.desktop { display: none; }
-  .mobile { display: flex; }
-}
-
-.desktop {
-  .columns {
-    display: flex;
-    height: 100%;
-    width: 100%;
-
-    @for $i from 1 through 10 {
-			.column-#{$i} {
-        width: $i*10%;
-      }
-    }
-    
-    .column {
-      margin: 6*$m 8*$m 6*$m;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-  }
-}
-
-.mobile {
-  .column {
-    margin: $header-size 3*$m 0;
-    padding-top: 2*$m;
-
-    > * {
-      margin-bottom: 6*$m;
-    }
-  }
-}
-
-header {
-  width: 100%;
-  height: $header-size;
-  position: fixed;
-  z-index: 5;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  padding: 2*$m 0;
-  background-color: $purple-main;
-  color: $white;
-  font-family: BebasNeue;
-  font-weight: 600;
-
-  .locale {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
-
-  h1 {
-    font-size: 3.5*$m;
-  }
-
-  h2 {
-    font-size: 2.5*$m;
-  }
-}
-
-nav {
-  width: $nav-width;
-  height: 100%;
-  position: fixed;
-  @include flex-column-around;
-  background-color: $purple-secondary;
-  padding-top: 15*$m;
-
-  a {
-    text-decoration: none;
-    font-weight: bold;
-    color: $purple-main;
-    font-family: BebasNeue;
-    font-size: 2.2*$m;
-    padding: 0 3*$m 0 $m;
-    opacity: 0.5;
-    transition: all $animation-time ease-in-out;
-
-    &.router-link-exact-active {
-      border-right: 0.4*$m solid $purple-main;
-      opacity: 1;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-.router-view {
-  margin-top: $header-size;
-  margin-left: $nav-width;
+.app-view {
+  padding: 15*$m 3*$m 3*$m;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
-}
-
-$transition: all $animation-time cubic-bezier(1.0, 0.5, 0.8, 1.0);
-
-.view-enter, .view-enter-to {
-  display: none;
-}
-.view-enter-active {
-  transition: $transition;
-}
-
-.view-leave-to {
-  transform: translateX(20px);
-  overflow-x: hidden;
-  transition: $transition;
-  opacity: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+	max-width: 650px;
+	margin: 0 auto;
 }
 </style>
