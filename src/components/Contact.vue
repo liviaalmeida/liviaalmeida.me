@@ -49,8 +49,16 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .contact {
-	@include flex-column-around;
+	@include flex;
 	align-content: flex-end;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 20px;
+
+	@media only screen and (max-width: 650px) {
+		flex-direction: column;
+		align-content: center;
+	}
 
   > *:not(:last-of-type) {
     margin-bottom: 5*$m;
