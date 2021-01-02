@@ -1,6 +1,6 @@
 <template>
 	<div class="programming">
-		<animated-title
+		<AnimatedTitle
 			:image="icon"
 			:text="$t('title.programming')"
 			:active="active"
@@ -12,7 +12,7 @@
 				@mouseover="active = true" @mouseout="active = false"
 			>
 				<span>{{skill.name}}</span>
-				<progress-bar :progress="skill.progress" />
+				<ProgressBar :progress="skill.progress" />
 			</div>
 		</div>
 	</div>
@@ -20,14 +20,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AnimatedTitle from '@/components/ui/AnimatedTitle.vue'
-import ProgressBar from '@/components/ui/ProgressBar.vue'
 
 export default Vue.extend({
-	components: {
-		AnimatedTitle,
-		ProgressBar,
-	},
 	data() {
 		return {
 			icon: require('@/assets/icons/programming.png'),

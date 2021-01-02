@@ -2,7 +2,7 @@
 	<div class="profile">
 		<img :src="profilePhoto">
 		<div>
-			<animated-title
+			<AnimatedTitle
 				:image="profileIcon"
 				:text="$t('title.profile')"
 				:active="active"
@@ -22,12 +22,7 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import AnimatedTitle from '@/components/ui/AnimatedTitle.vue'
-
 export default Vue.extend({
-	components: {
-		AnimatedTitle,
-	},
 	data() {
 		return {
 			profilePhoto: require('@/assets/images/self.png'),

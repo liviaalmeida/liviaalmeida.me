@@ -1,7 +1,8 @@
 <template>
 	<div class="timeline">
 		<div v-if="title && icon">
-			<animated-title :image="icon" :text="title" :active="active"></animated-title>
+			<AnimatedTitle :image="icon"
+			:text="title" :active="active" />
 		</div>
 		<ol class="timeline-list">
 			<li v-for="(timeEvent, index) in timeEvents" :key="index"
@@ -21,12 +22,7 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import AnimatedTitle from '@/components/ui/AnimatedTitle.vue'
-
 export default Vue.extend({
-	components: {
-		AnimatedTitle,
-	},
 	data() {
 		return {
 			active: false,

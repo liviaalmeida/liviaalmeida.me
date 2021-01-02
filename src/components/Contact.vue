@@ -1,6 +1,6 @@
 <template>
   <div class="contact">
-		<animated-link
+		<AnimatedLink
       v-for="(contact, index) in contacts" :key="index"
       :image="contact.image"
       :text="contact.text"
@@ -12,12 +12,7 @@
 <script lang="ts">
 import Vue from 'vue'
 
-import AnimatedLink from '@/components/ui/AnimatedLink.vue'
-
 export default Vue.extend({
-  components: {
-    AnimatedLink,
-  },
   data() {
     return {
       contacts: [

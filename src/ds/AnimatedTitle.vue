@@ -1,7 +1,8 @@
 <template>
 	<div class="animated-title">
 		<div class="icon">
-			<animated-icon :image="image" :size="4" :active="active" />
+			<AnimatedIcon :image="image"
+			:size="4" :active="active" />
 		</div>
 		<div class="title">
 			<h3>{{text}}</h3>
@@ -12,12 +13,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AnimatedIcon from '@/components/ui/AnimatedIcon.vue'
 
 export default Vue.extend({
-	components: {
-		AnimatedIcon
-	},
 	props: {
 		active: {
 			type: Boolean,
