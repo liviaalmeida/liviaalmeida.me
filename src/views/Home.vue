@@ -1,5 +1,5 @@
 <template>
-  <div class="column">
+  <div class="home">
 		<profile />
 		<work />
 		<presentations />
