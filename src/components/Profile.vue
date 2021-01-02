@@ -3,15 +3,14 @@
 		<img :src="profilePhoto">
 		<div>
 			<AnimatedTitle
-				:image="profileIcon"
-				:text="$t('title.profile')"
-				:active="active"
-			/>
-			<div
-				class="profile-text"
-				@mouseover="active = true" @mouseout="active = false"
-			>
-				<p v-for="(paragraph, p) in $t('profile')" :key="p">
+			:image="profileIcon"
+			:text="$t('title.profile')"
+			:active="active" />
+			<div class="profile-text"
+			@mouseover="active = true"
+			@mouseout="active = false">
+				<p v-for="(paragraph, p) in $t('profile')"
+				:key="p">
 					{{paragraph}}
 				</p>
 			</div>

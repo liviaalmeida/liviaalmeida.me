@@ -1,11 +1,11 @@
 <template>
 	<div class="animated-title">
-		<div class="icon">
+		<div>
 			<AnimatedIcon :image="image"
 			:size="4" :active="active" />
 		</div>
-		<div class="title">
-			<h3>{{text}}</h3>
+		<div class="animated-title-text">
+			<h3>{{ text }}</h3>
 			<hr>
 		</div>
 	</div>
@@ -37,16 +37,6 @@ export default Vue.extend({
 	width: 100%;
 	@include flex-row;
 
-	.title {
-		width: 100%;
-		margin-left: $m;
-		font-family: BebasNeue;
-		font-weight: 600;
-		font-size: 2.4*$m;
-		@include flex-column;
-		justify-content: center;
-	}
-
 	h3 {
 		margin-bottom: $m;
 	}
@@ -59,6 +49,16 @@ export default Vue.extend({
 		background-color: $purple-main;
 		@include animation-on-load(no-width-on-load);
 		transform-origin: 0;
+	}
+
+	&-text {
+		width: 100%;
+		margin-left: $m;
+		font-family: BebasNeue;
+		font-weight: 600;
+		font-size: 2.4*$m;
+		@include flex-column;
+		justify-content: center;
 	}
 }
 </style>
