@@ -1,5 +1,9 @@
 <template>
-	<div class="icon"></div>
+	<div :class="[
+		{ 'icon--active': active },
+		'icon',
+	]">
+	</div>
 </template>
 
 <script lang="ts">
@@ -42,14 +46,6 @@ export default Vue.extend({
 			this.elStyle.backgroundImage = `url('${this.image}')`
 		},
 	},
-	watch: {
-		active: function(val: boolean) {
-			const icon = this.$el
-			const activeClass = 'active'
-			if (val) icon.classList.add(activeClass)
-			else icon.classList.remove(activeClass)
-		}
-	}
 })
 </script>
 
@@ -70,7 +66,7 @@ export default Vue.extend({
 	transition: all $animation-time;
 	@include animation-on-load(on-icon-load);
 
-	&:hover, &.active {
+	&:hover, &--active {
 		@include icon-active;
 	}
 }
