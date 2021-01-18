@@ -23,10 +23,16 @@
 	],
   "experience": [
 		{
+			"title": "Zup Innovation",
+			"duration": "jan 2021 - aujourd'hui",
+			"intro": "Développeuse Front-end:",
+			"description": "travaillant comme développeuse front-end pour une plateforme logistique spécialisée dans l'intégration de différents moyens de transport utilisant Angular8+."
+		},
+		{
 			"title": "Questrade",
 			"duration": "juin 2020 - dec 2020",
 			"intro": "Ingénieure Front-end:",
-			"description": "j'ai travaillé comme ingénieure front-end pour une plateforme financière spécialisée dans le trading utilisant Angular8+."
+			"description": "j'ai travaillé comme ingénieure front-end pour une plateforme financière spécialisée dans le trading utilisant Angular8+, TypeScript, et SCSS."
 		},
 		{
 			"title": "Take",
