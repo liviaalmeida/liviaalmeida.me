@@ -51,7 +51,7 @@ $photo-size: 16*$m;
 		margin-top: .7*$m;
 		
 		p {
-			font-family: OpenSans;
+			font-family: 'Open Sans';
 			font-size: 1.8*$m;
 			text-align: justify;
 			line-height: 1.3;

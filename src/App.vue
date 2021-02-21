@@ -38,7 +38,7 @@ html, body, #app {
 }
 
 #app {
-  font-family: BebasNeue, OpenSans, Helvetica;
+  font-family: 'Bebas Neue', 'Open Sans', Helvetica;
 	color: $purple-main;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

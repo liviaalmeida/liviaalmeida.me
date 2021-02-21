@@ -77,7 +77,7 @@ export default Vue.extend({
 
 .skill {
 	align-self: flex-end;
-	font-family: OpenSans;
+	font-family: 'Open Sans';
 	font-size: 1.7*$m;
 	margin-top: 3*$m;
 

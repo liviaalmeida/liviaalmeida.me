@@ -54,7 +54,7 @@ export default Vue.extend({
 	&-text {
 		width: 100%;
 		margin-left: $m;
-		font-family: BebasNeue;
+		font-family: 'Bebas Neue';
 		font-weight: 600;
 		font-size: 2.4*$m;
 		@include flex-column;

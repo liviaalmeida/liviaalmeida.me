@@ -94,13 +94,13 @@ $bullet-size: 1.3*$m;
 		}
 
 		h5 {
-			font-family: BebasNeue;
+			font-family: 'Bebas Neue';
 			font-weight: 600;
 			font-size: 2*$m;
 		}
 
 		h6 {
-			font-family: OpenSans;
+			font-family: 'Open Sans';
 			font-size: 1*$m;
 			margin-left: 0.5*$m;
 		}
@@ -111,7 +111,7 @@ $bullet-size: 1.3*$m;
 				margin-right: 0.5*$m;
 			}
 
-			font-family: OpenSans;
+			font-family: 'Open Sans';
 			font-size: 1.5*$m;
 			text-align: justify;
 			line-height: 1.3;

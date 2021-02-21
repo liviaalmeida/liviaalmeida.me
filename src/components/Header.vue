@@ -31,7 +31,7 @@ header.header {
   padding: 2*$m 0;
   background-color: $purple-main;
   color: $white;
-  font-family: BebasNeue;
+  font-family: 'Bebas Neue';
   font-weight: 600;
 
   .locale {

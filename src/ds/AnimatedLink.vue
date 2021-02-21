@@ -46,7 +46,7 @@ export default Vue.extend({
 	a, a:visited {
 		text-decoration: none;
 		color: $purple-main;
-		font-family: Neuton;
+		font-family: 'Neuton';
 		font-weight: 600;
 		font-size: 2*$m;
 	}
