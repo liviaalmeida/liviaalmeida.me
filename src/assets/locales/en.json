@@ -16,7 +16,7 @@
 	"education": [
 		{
 			"title": "Universidade Federal de Minas Gerais (UFMG)",
-			"duration": "due to 06/2021",
+			"duration": "due to 11/2021",
 			"intro": "Bachelor's Degree",
 			"description": "Computer Science"
 		}
@@ -27,6 +27,12 @@
 			"duration": "jan 2021 - present",
 			"intro": "Front-end Developer:",
 			"description": "working as a front-end developer for a logistics platform specialized in integrating different means of transport using Angular8+."
+		},
+		{
+			"title": "Symbaros",
+			"duration": "aug 2021 - presente",
+			"intro": "Partner / Consultant:",
+			"description": "working as a front-end architect consultant for a platform specialized in renting commercial spaces. Setting up architecture and building a website in Vue.JS."
 		},
 		{
 			"title": "Questrade",

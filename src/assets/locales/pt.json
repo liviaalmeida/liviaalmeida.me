@@ -16,7 +16,7 @@
 	"education": [
 		{
 			"title": "UFMG",
-			"duration": "conclusão prevista 06/2021",
+			"duration": "conclusão prevista 11/2021",
 			"intro": "Bacharelado",
 			"description": "Ciência da Computação"
 		}
@@ -27,6 +27,12 @@
 			"duration": "jan 2021 - presente",
 			"intro": "Front-end Developer:",
 			"description": "atuando como front-end developer para uma plataforma de logística especializada na integração de diferentes meios de transporte usando o framework Angular8+."
+		},
+		{
+			"title": "Symbaros",
+			"duration": "ago 2021 - presente",
+			"intro": "Sócia / Consultora:",
+			"description": "atuando como consultora em arquitetura front-end para uma plataforma especializada em aluguel de espaços comerciais. Definindo arquitetura e construindo um website em Vue.JS."
 		},
 		{
 			"title": "Questrade",
