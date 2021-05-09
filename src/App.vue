@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
 		<div class="app-loading" v-if="loading">
-			<img :src="require('@/assets/images/self.png')">
+			<Coffee />
 		</div>
     <router-view class="app-view" v-else />
   </div>
@@ -59,13 +59,7 @@ html, body, #app {
 		height: 100%;
 		align-items: center;
 		justify-content: center;
-
-		img {
-			height: $loader-img;
-			width: $loader-img;
-			border-radius: 50%;
-			animation: appear .5s linear 0s 1 forwards, spin 6s linear .5s infinite forwards;
-		}
+		background-color: rgba($purple-main, .5);
 	}
 
 	&-view {
@@ -76,13 +70,5 @@ html, body, #app {
 		gap: 60px;
 		max-width: 650px;
 	}
-}
-
-@keyframes appear {
-	0% { transform: translateY(-100vh); }
-}
-
-@keyframes spin {
-	100% { transform: rotateY(720deg); }
 }
 </style>
