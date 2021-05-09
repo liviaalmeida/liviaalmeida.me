@@ -8,7 +8,12 @@
 			<li v-for="(timeEvent, index) in timeEvents"
 			:key="index" @mouseover="active = true"
 			@mouseout="active = false">
-				<h5>{{ timeEvent.title }}</h5>
+				<a :href="timeEvent.link"
+				v-if="timeEvent.link"
+				target="_blank">
+					{{ timeEvent.title }}
+				</a>
+				<h5 v-else>{{ timeEvent.title }}</h5>
 				<h6 v-if="timeEvent.duration">
 					{{ timeEvent.duration }}
 				</h6>
@@ -34,19 +39,23 @@ export default Vue.extend({
 		}
 	},
 	props: {
+		icon: {
+			type: String,
+			required: false,
+		},
+		link: {
+			type: String,
+			required: false,
+		},
 		timeEvents: {
 			type: Array as () => TimeEvent[],
-			required: true
+			required: true,
 		},
 		title: {
 			type: String,
-			required: false
+			required: false,
 		},
-		icon: {
-			type: String,
-			required: false
-		}
-	}
+	},
 })
 </script>
 
@@ -89,11 +98,20 @@ $bullet-size: 1.3*$m;
 			background: lighten($purple-main, 10%);
 		}
 
-		h5, h6 {
+		a, h5, h6 {
 			display: inline-block;
 		}
 
-		h5 {
+		a, a:visited {
+			/* text-decoration: none; */
+			color: $purple-main;
+
+			&:focus {
+				color: $purple-main;
+			}
+		}
+
+		h5, a, a:visited {
 			font-family: 'Bebas Neue';
 			font-weight: 600;
 			font-size: 2*$m;

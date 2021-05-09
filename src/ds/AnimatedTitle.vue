@@ -1,8 +1,15 @@
 <template>
-	<div class="animated-title">
+	<div class="animated-title"
+	v-visibility="{
+		callback: visibilityChange,
+		intersection: {
+			threshold: 1,
+		},
+		throttle: 500,
+	}">
 		<div>
 			<AnimatedIcon :image="image"
-			:size="4" :active="active" />
+			:size="4" :active="inview" />
 		</div>
 		<div class="animated-title-text">
 			<h3>{{ text }}</h3>
@@ -27,8 +34,18 @@ export default Vue.extend({
 		text: {
 			type: String,
 			required: true
+		},
+	},
+	data() {
+		return {
+			inview: false,
 		}
-	}
+	},
+	methods: {
+		visibilityChange(visible: boolean) {
+			this.inview = visible
+		},
+	},
 })
 </script>
 

@@ -51,7 +51,7 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @mixin icon-active {
-	background-size: 65%;
+	background-size: 50%;
 	opacity: 1;
 }
 
@@ -60,7 +60,7 @@ export default Vue.extend({
 	background-color: $purple-main;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 50%;
+	background-size: 40%;
 	border-radius: 50%;
 	opacity: 0.6;
 	transition: all $animation-time;
