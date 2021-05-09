@@ -1,12 +1,13 @@
 <template>
   <div class="home">
-		<profile />
-		<work />
-		<programming />
-		<presentations />
-		<education />
-		<languages />
-		<contact />
+		<Profile />
+		<Work />
+		<Programming />
+		<Presentations />
+		<Education />
+		<Projects />
+		<Languages />
+		<Contact />
   </div>
 </template>
 
@@ -15,25 +16,23 @@ import Vue from 'vue'
 
 import Profile from '@/components/Profile.vue'
 import Work from '@/components/Work.vue'
-import Presentations from '@/components/Presentations.vue'
 import Programming from '@/components/Programming.vue'
-import Languages from '@/components/Languages.vue'
+import Presentations from '@/components/Presentations.vue'
 import Education from '@/components/Education.vue'
+import Projects from '@/components/Projects.vue'
+import Languages from '@/components/Languages.vue'
 import Contact from '@/components/Contact.vue'
 
 export default Vue.extend({
   components: {
 		Profile,
 		Work,
-		Presentations,
 		Programming,
-		Languages,
+		Presentations,
 		Education,
+		Projects,
+		Languages,
 		Contact,
   },
 })
 </script>
-
-<style lang="scss" scoped>
-
-</style>
