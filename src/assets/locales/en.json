@@ -16,21 +16,21 @@
 	"education": [
 		{
 			"title": "Universidade Federal de Minas Gerais (UFMG)",
-			"duration": "due to 11/2021",
+			"duration": "due to 09/2021",
 			"intro": "Bachelor's Degree",
 			"description": "Computer Science"
 		}
 	],
   "experience": [
 		{
-			"title": "Zup Innovation",
-			"duration": "jan 2021 - present",
-			"intro": "Front-end Developer:",
-			"description": "working as a front-end developer for a logistics platform specialized in integrating different means of transport using Angular8+."
+			"title": "Ecosia",
+			"duration": "apr 2021 - present",
+			"intro": "Software Engineer:",
+			"description": "working as a freelance software engineer for the search engine that plants trees. Using Vue.JS and Nuxt with HTML and SCSS in the front-end."
 		},
 		{
 			"title": "Symbaros",
-			"duration": "aug 2021 - presente",
+			"duration": "aug 2021 - present",
 			"intro": "Partner / Consultant:",
 			"description": "working as a front-end architect consultant for a platform specialized in renting commercial spaces. Setting up architecture and building a website in Vue.JS."
 		},
@@ -44,7 +44,7 @@
 			"title": "Take",
 			"duration": "june 2019 - may 2020",
 			"intro": "Full Stack Developer:",
-			"description": "worked with AngularJS and VueJS for front-end, .NET core for back-end, and occasionally Python for NLP models analysis."
+			"description": "worked with AngularJS and VueJS in the front-end, .NET core in the back-end, and occasionally Python for NLP models analysis."
 		},
 		{
 			"title": "Take",
@@ -62,7 +62,7 @@
 		{
 			"title": "French",
 			"intro": "Proficiency:",
-			"description": "intermediate reading, basic writing, basic speech<br>Nível A1.3"
+			"description": "intermediate reading, basic writing, basic speech<br>Level A1.3"
 		}
 	],
   "presentations": [

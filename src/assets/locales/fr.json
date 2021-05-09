@@ -16,21 +16,21 @@
 	"education": [
 		{
 			"title": "Université Fédérale de Minas Gerais (UFMG)",
-			"duration": "terminée en 11/2021",
+			"duration": "terminée en 09/2021",
 			"intro": "Baccalauréat",
 			"description": "Informatique"
 		}
 	],
   "experience": [
 		{
-			"title": "Zup Innovation",
-			"duration": "jan 2021 - aujourd'hui",
-			"intro": "Développeuse Front-end:",
-			"description": "travaillant comme développeuse front-end pour une plateforme logistique spécialisée dans l'intégration de différents moyens de transport utilisant Angular8+."
+			"title": "Ecosia",
+			"duration": "avr 2021 - aujourd'hui",
+			"intro": "Ingénieure Logiciel:",
+			"description": "travaillant comme ingénieure logiciel free-lance pour le moteur de recherche qui plantent des arbres. Utilisant Vue.JS et Nuxt avec HTML et SCSS dans le front-end."
 		},
 		{
 			"title": "Symbaros",
-			"duration": "août 2021 - presente",
+			"duration": "août 2021 - aujourd'hui",
 			"intro": "Associée / Consultante:",
 			"description": "traivallant comme consultante architecte front-end pour une plateforme spécialisée dans la location d'espaces commerciaux. Configurant l'architecture et créant un site web utilisant Vue.JS."
 		},
