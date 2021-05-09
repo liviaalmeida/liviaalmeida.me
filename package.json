@@ -13,9 +13,9 @@
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.2",
     "vue-i18n": "^8.17.3",
-    "vue-in-viewport-directive": "^2.0.2",
     "vue-property-decorator": "^8.3.0",
-    "vue-router": "^3.1.5"
+    "vue-router": "^3.1.5",
+    "vueinview": "^1.0.7"
   },
   "devDependencies": {
     "@types/webpack": "^4.4.0",
