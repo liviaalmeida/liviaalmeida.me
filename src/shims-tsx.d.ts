@@ -12,21 +12,21 @@ declare global {
   }
 
   type TimeEvent = {
-    title: string,
-    duration?: string,
-    intro?: string,
-    description: string,
+    title: string;
+    duration?: string;
+    intro?: string;
+    description: string;
   }
 
   type Skill = {
-    name: string,
-    progress: number,
+    name: string;
+    progress: number;
   }
 
   type Contact = {
-    image: string,
-    text: string,
-    href: string,
+    image: string;
+    text: string;
+    href: string;
   }
 
 }

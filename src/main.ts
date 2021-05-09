@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import i18n from './i18n'
-import Inview from 'vueinview'
+import { ObserveVisibility } from 'vue-observe-visibility'
 
 import AnimatedIcon from '@/ds/AnimatedIcon.vue'
 import AnimatedLink from '@/ds/AnimatedLink.vue'
@@ -18,7 +18,7 @@ Vue.component('Coffee', Coffee)
 Vue.component('ProgressBar', ProgressBar)
 Vue.component('Timeline', Timeline)
 
-Vue.use(Inview)
+Vue.directive('visibility', ObserveVisibility)
 
 Vue.config.productionTip = false
 

@@ -3,4 +3,4 @@ declare module '*.vue' {
   export default Vue
 }
 
-declare module 'vueinview'
+declare module 'vue-observe-visibility'
